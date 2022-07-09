@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-menu{
+    @apply flex justify-around items-center;
+}
+
+.nav-menu-item {
+    @apply flex flex-col items-center;
+}
+
+.nav-menu-item.active {
+    @apply transform scale-110 bg-white text-gray-900 p-2 rounded-lg transition duration-150 ease-in-out;
+}
+
+.container {
+    @apply w-11/12 mx-auto;
+}
+
+.title {
+    @apply text-indigo-900 text-2xl font-semibold tracking-wider;
+}
+
+.sub-title {
+    @apply text-gray-500 font-semibold mb-2;
+}
+
+.crypto-card-w {
+    width: 47%;
+}
+
+.w-300{
+    width: 350px;
+}
+
+.desc > h3 {
+    @apply text-indigo-900 text-2xl font-semibold tracking-wider;
+}
